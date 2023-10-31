@@ -8,6 +8,7 @@
 
     <link type="text/css" rel="stylesheet"  rel="stylesheet"     href="../frontend/panelControl/recursos/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../frontend/panelControl/recursos/css/styles.css">
+   
 
     <style>
         body {
@@ -53,11 +54,67 @@
       </div>
     </div>
   </div>
-   
+
+  <div class="container right ">
+    <div class="row">
+      <!-- Crear una columna para la alineación a la derecha -->
+      <div class="col s12 m8 offset-m2 right-align">
+        <div class="card">
+          <div class="card-content green accent-2">
+            <p>Check the effectiveness of H3A34E!!</p>
+           <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger deep-purple darken-1" href="#modal1">Get your free account!!</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="User" id="nUser" type="text" class="validate">
+              <label for="nUser"></label>
+            </div>
+            <div class="alertass"></div>
+            
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nPass" type="password" class="validate">
+              <label for="nPass">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nemail" type="email" class="validate">
+              <label for="nemail">email</label>
+            </div>
+          </div>
+         
+          
+        </form>
+      </div>
+            
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-sucess" id="Registro">Registrarse</button>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">cancelar</a>
+    </div>
+  </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 </head>
 <body>
+
     <script>
          document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
@@ -70,6 +127,12 @@
     var instances = M.Carousel.init(elems);
   });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+  </script>
  
 
     <script  src="../frontend/panelControl/recursos/Jquery new/code.jquery.com_jquery-3.7.0.min.js"></script>
